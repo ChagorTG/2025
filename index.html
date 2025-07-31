@@ -12,21 +12,36 @@
      align-items: center;    /* Центрує по вертикалі */
     font-family: Arial, sans-serif;
     text-align:center;
+    flex-direction: column;
    }
-  table, th, td {
+    h1 {
+    text-align: center;
+  }
+  
+  /* table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 8px;
+  } */
+   table {
+    border-collapse: collapse;
+    max-width: 600px;
+    border: 1px solid black;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
   }
   caption {
     font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 10px;
   }
+  
 </style>
 </head>
 <body>
-    <h1>Необхідна інформація тут!</h1>
+    <h1>Необхідне тут:</h1>
 <table>
   <caption>Інформація для користування:</caption>
   <thead>
