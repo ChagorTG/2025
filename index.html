@@ -4,40 +4,80 @@
 <title>Інформація</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
- body {
-    height: 100vh;
-     margin: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;    /* Центрує по вертикалі */
-    font-family: Arial, sans-serif;
-    text-align:center;
-    flex-direction: column;
-   }
-    h1 {
+/* ... (весь код CSS з пункту 1) ... */
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-  }
-  
-  /* table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 8px;
-  } */
-   table {
-    border-collapse: collapse;
-    max-width: 600px;
-    border: 1px solid black;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 10px;
-  }
-  caption {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f7f6; 
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 0;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: #ffffff; 
+}
+
+caption {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007bff; 
+}
+
+th, td {
+    padding: 12px 15px;
+    border: none; 
+    text-align: left;
+}
+
+thead tr {
+    background-color: #007bff; 
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8; 
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; 
+}
+
+a {
+    color: #0056b3; 
+    text-decoration: none; 
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline; 
+}
+
+td:first-child {
+    width: 100%;
+}
 </style>
 </head>
 <body>
@@ -111,6 +151,7 @@
 </body>
 
 </html>
+
 
 
 
